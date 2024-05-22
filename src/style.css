@@ -1,0 +1,444 @@
+
+
+.body {
+    background-image: url('./Image/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 10vh auto;
+
+}
+.projectListli {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectListli>button {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    background-image: url('./Image/option.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: 0px;
+    opacity: 0;
+
+}
+
+.projectListli>button:hover {
+    opacity: 1;
+}
+
+.whiteBorder{
+    border: white solid ;
+    
+    margin-bottom: 10px;
+    min-width: 50px;
+
+}
+
+.UnderBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    height: auto;
+}
+
+.DueDate, .priority {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: rgb(57, 57, 57) solid 1px;
+    border-radius: 15px;
+}
+
+.DueDate:hover, .priority:hover{
+    border: rgb(120, 120, 120) solid 1px;
+}
+
+
+
+.DueDateLabel , .priorityLabel{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: normal;
+    border: 0px;
+    border-bottom: gray solid 1px;
+}
+
+.DueDateDate, .priorityNum{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.blockdiv {
+    
+    display: flex;
+    justify-content: center;
+}
+.darkDiv {
+    position: fixed;  /* Positioning relative to the viewport */
+    top: 0;           /* Align to the top */
+    left: 0;          /* Align to the left */
+    width: 100%;      /* Full width */
+    height: 100%;     /* Full height */
+    z-index: 9999;    /* Overlay other elements */
+    background-color:rgb(0, 0, 0);
+    opacity: 85%;
+}
+
+
+.overallDiv{
+    display: flex;
+    z-index: 9999;
+    position: relative;
+}
+
+.formE {
+    color: white;
+    position: fixed;  /* Positioning relative to the viewport */
+    top: 50%;         /* Align to the middle vertically */
+    left: 50%;        /* Align to the middle horizontally */
+    transform: translate(-50%, -50%); /* Ensures the center of the div is the point of alignment */        /* Align to the left */
+    width: 50%;      /* Full width */
+    height: 50%;
+    height: clamp(50%, 50%, 100%);
+    border-radius: 30px;
+    z-index: 9999;    /* Overlay other elements */
+    background-color:  rgb(0, 0, 0);
+    padding: 30px;
+}
+.header{
+    background-color: black;
+    height: 10vh;
+    color: white;
+    padding: 2vh;
+   /* border: white solid 1px; */
+}
+
+.headerInner {
+    border: white ; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    height: 60px;
+    width: 60px;
+    background-image: url('./Image/tree.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.leftHeader {
+    display: flex;
+}
+
+
+
+.rightHeader {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-right: 20px;
+}
+
+.LogoName {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding-left: 1%;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    background-image: url('./Image/facebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.DueDateLabelIcon {
+    background-image: url('./Image/date.png');
+}
+
+.priorityLabelIcon{
+    background-image: url('./Image/priority3.png');
+    margin-right: 2px;
+}
+
+.signUp {
+    background-image: url('./Image/SignUp.png');
+}
+
+.like {
+    background-image: url('./Image/like.png');
+}
+
+.shareButton {
+    border: 0px;
+    border-radius: 20px;
+    width: 90px;
+    margin-right: 5px;
+    color: white;
+    background-color: #59ef48;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+    align-self: center;
+}
+
+.shareButton:hover {
+    background-color: rgb(179, 241, 172);
+    color: black;
+}
+
+.AddProject {
+    width: 150px;
+    height: 40px;
+    align-self: center;
+}
+
+
+
+.form {
+    color: white;
+    border-radius: 10px;
+    border: white solid 1px;
+    min-height: 85%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+
+.label {
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: end;
+}
+
+
+
+.input{
+    color: white;
+    background-color: rgb(53, 53, 53);
+   
+    border-radius: 5px;
+    /*border: white solid 1px;*/
+    border: 0px;
+    
+    width: clamp(50%, 500px, 70%);
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.project {
+    background-color: rgb(1, 1, 1);
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    color: white;
+    /*border: white solid; */
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerParent {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    /*border: white solid; */
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.todoBoard {
+    background-color: black;
+    min-height: 40vh;
+    border: rgb(113, 113, 113) solid 0.3px;
+    margin: 5vh;
+    border-radius: 10px;
+    padding: 10vh;
+}
+
+
+.todoTitle {
+    border-bottom: gray solid 1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.newProject {
+    
+    display: flex;
+    justify-content: flex-start;
+    min-height: 7vh;
+    color: white;
+    padding: 0;
+}
+
+
+.newProject>ul, .projectList>ul , .todoTitle>ul  {
+    padding-inline-start: 0px;
+    
+    border: white;
+    border: 1px;
+    padding-right: 20%;
+    border-radius: 5px;
+}
+
+.projectList>ul, .todoTitle>ul {
+    border-radius: 0%;
+}
+
+.newProject>ul:hover, .projectList>ul:hover {
+    background-color: rgb(82, 82, 82);
+    
+    
+}
+
+.todoTitle>ul {
+    padding-right: 0;
+}
+.newProject>ul li, .projectList>ul li , .todoTitle>ul li{
+    list-style: none;
+    padding-left: 40px;
+    position: relative;
+    height: 30px;
+    height: clamp(30px, 30px, 100px);
+    display: flex;
+    align-items: center;
+    
+  }
+  
+.projectList>ul li ,.todoTitle>ul li{
+    width: 100%;
+    
+    margin-right: 0;
+    height: 20px;
+    height: clamp(20px, 20px, 100px);
+  }
+.todoTitle>ul li {
+    height: 40px;
+    padding-left: 50px;
+    height: clamp(40px, 40px, 100px);
+}
+.newProject>ul li:before, .projectList>ul li:before , .todoTitle>ul li:before {
+    text-align: center;
+    content: "";
+    position: absolute;
+    top: 0px;
+    
+    left: 5px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-image: url("./Image/add.png");
+  }
+
+  .projectList>ul li:before {
+    background-image: url("./Image/project.png");
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .todoTitle>ul li:before  {
+    background-image: url("./Image/projectGrey.png");
+    height: 40px;
+    width: 40px;
+  }
+
+  .projectTile {
+    padding-left: 7px;
+    padding-bottom: 5px;
+    /*border-bottom: rgb(113, 113, 113) solid 1px; */
+    border-bottom:  rgb(89, 239, 72) solid 1px; 
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .projectList{
+    
+    margin-top: 10px;
+  }
+
+  .addBlock  {
+    
+    display: flex;
+    min-height: 50px;
+  }
+  .up {
+    border-top: white solid 0.5px;
+    align-self: flex-end;
+    width: 100%;
+    height: 50%;
+  }
+  .bottom {
+    
+    align-self: flex-start;
+    width: 100%;
+    height: 50%;
+  }
+  .leftline, .rightline {
+    
+    width: clamp(30%, 47%, 50%);
+    display: flex;
+    flex-direction: column;
+  }
+
+.addButton {
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    color: rgb(89, 239, 72);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.firstdiv {
+    margin-top: 5%;
+    color: white;
+}
+.input1 {
+   color: white;
+    
+    
+}
+
+.label1{
+    
+    padding-left: 2%;
+}
+
+.projectList>ul {
+    
+    height: clamp(40px, 40px, 400px);
+}
